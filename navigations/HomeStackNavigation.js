@@ -2,28 +2,23 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from '../screens/Home';
-import LoginScreen from '../screens/Login';
-import SignupScreen from '../screens/Signup';
-import LoadingScreen from '../screens/Loading';
+// import LoginScreen from '../screens/Login';
+// import SignupScreen from '../screens/Signup';
+// import LoadingScreen from '../screens/Loading';
 import SelfPacedCoursesScreen from '../screens/SelfPacedCourses';
 
 
 const Stack = createStackNavigator();
 
-const AuthNavigator = () => {
+const HomeStackNavigator = () => {
   return (
     <Stack.Navigator 
     screenOptions={{
         headerShown: false
       }}
-    initialRouteName="Home">
-      {/* <Stack.Screen name="Loading" component={LoadingScreen} /> */}
+    initialRouteName="HomeScreen">
 
-      {/* <Stack.Screen name="Login" component={LoginScreen} 
-      options={{ headerLeft: null }}
-      /> */}
-      {/* <Stack.Screen name="Signup" component={SignupScreen} /> */}
-      <Stack.Screen name="Home"
+      <Stack.Screen name="HomeScreen"
        component={HomeScreen}
 
        />
@@ -36,4 +31,4 @@ const AuthNavigator = () => {
   );
 };
 
-export default AuthNavigator;
+export default HomeStackNavigator;

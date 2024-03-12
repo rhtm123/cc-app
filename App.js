@@ -4,8 +4,9 @@ import { PaperProvider } from 'react-native-paper';
 import { MD3LightTheme as DefaultTheme } from 'react-native-paper';
 import { NavigationContainer } from '@react-navigation/native';
 
-import AuthNavigator from './navigations/AuthNavigation';
+// import AuthNavigator from './navigations/HomeStackNavigation';
 
+import MyDrawer from './navigations/DrawerNavigation'; 
 
 const theme = {
   ...DefaultTheme,
@@ -22,7 +23,7 @@ export default function App() {
       <PaperProvider theme={theme}>
         <StatusBar style="auto" />
 
-        <AuthNavigator />
+        <MyDrawer />
         
       </PaperProvider>
     </NavigationContainer>
