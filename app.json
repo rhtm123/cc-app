@@ -2,7 +2,7 @@
   "expo": {
     "name": "CCApp",
     "slug": "CCApp",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -21,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
-    },
+      },
+      "package": "com.rhtm123.CCApp"
+      },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d4eba6ab-d6bd-417b-8ae8-d2df7617c946"
+      }
     }
   }
 }
